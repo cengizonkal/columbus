@@ -1,30 +1,30 @@
 {
-    "name": "conkal/columbus",
-    "description": "KKTCELL Columbus SMS package",
-    "type": "library",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Conkal\\Columbus\\": "src/"
-        }
-    },
-    "require": {
-        "ext-soap": "*",
-        "ext-mbstring": "*"
-        
-    },
-    "authors": [
-        {
-            "name": "cengiz",
-            "email": "onkal.cengiz@gmail.com"
-        }
-    ],
-    "autoload-dev": {
-    "classmap": [
-      "tests"
-    ]
-  },
-    "require-dev": {
-        "phpunit/phpunit": "^10.5"
+  "name": "conkal/columbus",
+  "description": "KKTCELL Columbus SMS package",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Conkal\\Columbus\\": "src/"
     }
+  },
+  "require": {
+    "ext-mbstring": "*",
+    "guzzlehttp/guzzle": "^7.8",
+    "ext-simplexml": "*"
+  },
+  "authors": [
+    {
+      "name": "cengiz",
+      "email": "onkal.cengiz@gmail.com"
+    }
+  ],
+  "autoload-dev": {
+    "psr-4": {
+      "Conkal\\Columbus\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5"
+  }
 }
