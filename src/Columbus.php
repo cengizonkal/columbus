@@ -55,7 +55,7 @@ XML;
         $xml->registerXPathNamespace('S', 'http://schemas.xmlsoap.org/soap/envelope/');
         $xml->registerXPathNamespace('ns2', 'http://webservice.proxy.columbus.turkcelltech.com/');
         $this->registerId = (string)$xml->xpath('//S:Body/ns2:registerResponse/return/registerId')[0];
-        return $this->registerId;
+        return $this;
     }
 
     public function getRegisterId()
