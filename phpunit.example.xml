@@ -1,0 +1,8 @@
+<phpunit>
+    <php>
+        <env name="USER_NAME" value="username"/>
+        <env name="PASSWORD" value="password"/>
+        <env name="RECIPIENT" value="05485555555555"/>
+        <env name="FROM" value="SENDERID"/>
+    </php>
+</phpunit>
